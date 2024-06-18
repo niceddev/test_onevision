@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'dummyjson' => [
+        'host' => 'https://dummyjson.com',
+    ],
+
 ];
