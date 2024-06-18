@@ -36,7 +36,7 @@ return [
     ],
 
     'dummyjson' => [
-        'host' => 'https://dummyjson.com',
+        'host' => env('DUMMY_JSON_HOST', 'https://dummyjson.com'),
     ],
 
 ];
