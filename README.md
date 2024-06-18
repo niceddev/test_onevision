@@ -1,11 +1,16 @@
 ## TO DO:
 
 ```
-- alias sail='vendor/bin/sail'
-- sail up -d
-- sail artisan migrate
-- sail npm install
-- sail npm run dev
+cp .env.example .env
+docker-compose up -d
+docker exec -it sail_project bash
+composer i
+npm i && npm run build
+alias sail='./vendor/bin/sail'
+sail up -d
+sail artisan migrate
+sail npm install
+sail npm run dev
 ```
 
 ## If permission issues:
